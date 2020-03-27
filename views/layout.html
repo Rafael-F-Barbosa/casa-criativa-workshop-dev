@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!--Comentários HTML-->
+    <!-- Hypertext - textos que aceiam links e audio visual 
+         Markeup   - marcação feita com <tags> 
+         Language  - Linguagem    
+    -->
+
+<head> <!-- Responsável por receber configurações da página. -->
+    
+    <meta charset="UTF-8">
+
+    {% block title%}
+        <title> Casa Criativa</title> 
+    {% endblock title%}
+    
+    {% include "head.html" %}
+
+</head>
+<body id="{{bodyId}}">  
+
+    <div id="container">
+
+        {% block content %}
+        {% endblock%}
+
+        
+    </div>
+
+    {% include "modal.html" %}
+   
+</body> 
+
+
+</html>
